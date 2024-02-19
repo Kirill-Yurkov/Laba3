@@ -10,20 +10,21 @@ public class Main {
         Person louis = new Person("Louis");
         Person rachel = new Person("Rachel");
         Person gage = new Person("Gage");
-        Store store = new Store("SuperMarket");
+        Store store = new Store("Louis' Home");
         Home home = new Home("Louis' Home");
-        MedicineCenter medicineCenter = new MedicineCenter("City Medical Center");
-        Parrot parrot = new Parrot("Kesha");
+        MedicineCenter medicineCenter = new MedicineCenter("Louis' Home");
+        Parrot kesha = new Parrot("Kesha");
         WeatherType currentWeatherType = WeatherType.RAINY;
-        SoftBear freddyBear = new SoftBear("FreddyBear", 3);
+        SoftBear freddyBear = new SoftBear("FreddyBear", 3, "jacket");
+
 
         home.addPeople(louis,rachel,gage);
         home.startCinema();
         louis.setCurrentEmotion(EmotionType.SURPRISE);
-        parrot.memorizePhrase("Ариэль Шэрон свихнулся");
-        parrot.say();
-        rachel.openBirdCage(parrot);
-        gage.chaseParrot(parrot);
+        kesha.memorizePhrase("Ариэль Шэрон свихнулся");
+        kesha.say();
+        rachel.openBirdCage(kesha);
+        gage.chaseParrot(kesha);
         louis.haveConversation(rachel, "telling funny joke");
         louis.haveConversation(gage, "telling funny joke");
         louis.checkHealth();
@@ -31,7 +32,7 @@ public class Main {
         louis.eat(FoodType.PASTA);
         louis.expressLoveFor(rachel);
         louis.expressLoveFor(gage);
-        parrot.clearMemorize();
+        kesha.clearMemorize();
         home.exitLocation(louis);
 
         louis.setLocation(store);

@@ -4,37 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b134ca-f801-4246-a37a-d15cf9c6abf0" name="Changes" comment="Commit after Victoria review">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Playable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/text_objects/SoftBear.java" afterDir="false" />
+    <list default="true" id="78b134ca-f801-4246-a37a-d15cf9c6abf0" name="Changes" comment="Commit after Alexey review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/AbstractEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/AbstractEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/AngerEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/AngerEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/EmotionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/EmotionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/FearEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/FearEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/JoyEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/JoyEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/SadnessEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/SadnessEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emotions/SurpriseEmotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emotions/SurpriseEmotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Emotionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Emotionable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Memorizible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Memorizible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Musicable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Musicable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Talkingable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Talkingable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locations/AbstractLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/locations/AbstractLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locations/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/locations/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locations/MedicineCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/locations/MedicineCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locations/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/locations/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/CarSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/CarSeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/FoodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/FoodType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/Parrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextObjects/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/AbstractWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather/AbstractWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/RainyWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather/RainyWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/SnowyWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather/SnowyWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/SunnyWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather/SunnyWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/WeatherType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather/WeatherType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/locations/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/text_objects/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/text_objects/SoftBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_objects/SoftBear.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,20 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ender/IdeaProjects/Educat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,7 +64,7 @@
       <workItem from="1708170389533" duration="143000" />
       <workItem from="1708247508805" duration="915000" />
       <workItem from="1708326570292" duration="4150000" />
-      <workItem from="1708345485826" duration="9577000" />
+      <workItem from="1708345485826" duration="13517000" />
     </task>
     <task id="LOCAL-00001" summary="main pushed">
       <option name="closed" value="true" />
@@ -114,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708345791595</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit after Alexey review">
+      <option name="closed" value="true" />
+      <created>1708355487329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708355487329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +119,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="main pushed" />
     <MESSAGE value="Commit after Victoria review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit after Victoria review" />
+    <MESSAGE value="Commit after Alexey review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit after Alexey review" />
   </component>
 </project>

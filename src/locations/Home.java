@@ -59,7 +59,7 @@ public class Home extends AbstractLocation {
         for(Person person: getPeople()){
             person.setMentalHealth(person.getMentalHealth()+10);
             person.setCurrentEmotion(EmotionType.JOY);
-            System.out.println("Home cinema is started");;
         }
+        System.out.println("Home cinema is started");
     }
 }

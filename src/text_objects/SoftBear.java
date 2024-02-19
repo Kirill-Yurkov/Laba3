@@ -7,15 +7,17 @@ public class SoftBear extends Toy {
     private int cost;
     private boolean inMotion;
     private String costume;
-    public SoftBear(String name, int cost) {
-        super(name, cost);
+    public SoftBear(String name, int cost){
+        super(name,cost);
+        this.name = name;
+        this.cost = cost;
         inMotion = false;
         costume = "T-Shirt";
     }
     public SoftBear(String name, int cost, String costume){
-        super(name,cost);
-        this.costume = costume;
+        this(name,cost);
         inMotion = false;
+        this.costume = costume;
     }
     @Override
     public String getName() {
@@ -68,7 +70,7 @@ public class SoftBear extends Toy {
     }
     private void stopDance(){
         if(inMotion){
-            System.out.println(name + " stop dancing.");
+            System.out.println(name + " stop moving.");
             inMotion = false;
         }
     }
@@ -82,7 +84,7 @@ public class SoftBear extends Toy {
     }
     private void stopClap(){
         if(inMotion){
-            System.out.println(name + " stop clapping.");
+            System.out.println(name + " stop moving.");
             inMotion = false;
         }
     }

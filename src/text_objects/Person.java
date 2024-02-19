@@ -115,7 +115,7 @@ public class Person implements Talkingable {
     }
 
     public void haveConversation(Person otherPerson, String topic) {
-        if(otherPerson.getCurrentEmotion() != null && otherPerson.getLocation()==location) {
+        if(otherPerson.getCurrentEmotion() != null && location.equals(otherPerson.getLocation())) {
             mentalHealth += otherPerson.getCurrentEmotion().getMentalInfluence();
             checkHealth();
             System.out.println(name + " is having a conversation with " + otherPerson.getName() + " about: " + topic);
@@ -123,7 +123,7 @@ public class Person implements Talkingable {
     }
 
     public void expressLoveFor(Person otherPerson) {
-        if(location.equals(otherPerson.location)) {
+        if(location.equals(otherPerson.getLocation())) {
             System.out.println(name + " expresses love for " + otherPerson.getName());
             setCurrentEmotion(EmotionType.JOY);
             otherPerson.setCurrentEmotion(EmotionType.JOY);
@@ -167,7 +167,7 @@ public class Person implements Talkingable {
                 weather.getWeather().interact(this);
                 setCurrentEmotion(EmotionType.JOY);
             } else {
-                System.out.println(car.getModel() + " isnt started");
+                System.out.println(car.getModel() + " isnt started. Engine is too cold.");
                 setCurrentEmotion(EmotionType.ANGER);
             }
         } else {
