@@ -11,11 +11,9 @@ public class Home extends AbstractLocation {
 
     @Override
     public void interactInside(Person person) {
-        enterLocation(person);
         System.out.println(person.getName() + " is relaxing at " + getName() + ".");
 
         person.setCurrentEmotion(EmotionType.JOY);
-        exitLocation(person);
     }
 
     public void cookFood(FoodType foodType) {

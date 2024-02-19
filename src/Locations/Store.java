@@ -12,7 +12,6 @@ public class Store extends AbstractLocation {
 
     @Override
     public void interactInside(Person person) {
-        enterLocation(person);
         this.person = person;
         System.out.println(person.getName() + " is shopping at " + getName() + ".");
         person.setCurrentEmotion(EmotionType.JOY);
@@ -21,10 +20,6 @@ public class Store extends AbstractLocation {
     public Car buyCar(Car car) {
         if (person.getMoney() > car.getCost()) {
             System.out.println(person.getName() + " buy a new car!");
-            person.getCar().setCarSeat(CarSeat.BACK);
-            person.getCar().setCarSeat(CarSeat.FRONT);
-            person.getCar().setCarSeat(CarSeat.DRIVER);
-            person.setCurrentEmotion(EmotionType.JOY);
             person.setMoney(person.getMoney() - car.getCost());
             return car;
         } else {
