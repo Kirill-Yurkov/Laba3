@@ -6,7 +6,6 @@ public enum EmotionType {
     SADNESS(new SadnessEmotion("Sadness",-15)),
     ANGER(new AngerEmotion("Anger", -20)),
     FEAR(new FearEmotion("Fear",-10));
-    private int mentalInfluence;
     private final AbstractEmotion emotion;
 
     EmotionType(AbstractEmotion emotion) {

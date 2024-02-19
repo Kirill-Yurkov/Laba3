@@ -20,6 +20,7 @@ public abstract class AbstractLocation {
     public abstract void interactInside(Person person);
     public void enterLocation(Person person) {
         addPeople(person);
+        person.setLocation(this);
         System.out.println(person.getName() + " enters " + getName() + ".");
     }
 
@@ -38,6 +39,7 @@ public abstract class AbstractLocation {
     }
     public void exitLocation(Person person) {
         removePeople(person);
+        person.setLocation(null);
         System.out.println(person.getName() + " exits " + getName() + ".");
     }
 

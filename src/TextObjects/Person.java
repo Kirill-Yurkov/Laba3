@@ -10,6 +10,7 @@ import java.util.Objects;
 
 public class Person implements Talkingable {
     private int money;
+    private Toy toy;
     private String name;
     private int mentalHealth;
     private AbstractEmotion currentEmotion;
@@ -29,6 +30,14 @@ public class Person implements Talkingable {
         this.hungerLevel = 0;
         this.mentalHealth = 100;
         this.money = (int) (Math.random()*5000) + 1500;
+    }
+
+    public Toy getToy() {
+        return toy;
+    }
+
+    public void setToy(Toy toy) {
+        this.toy = toy;
     }
 
     public int getMoney() {
@@ -215,6 +224,10 @@ public class Person implements Talkingable {
     }
 
     @Override
+    public void say(String phrase) {
+        System.out.println(name + " is saying: " + phrase);
+    }
+    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
@@ -245,10 +258,4 @@ public class Person implements Talkingable {
         total = total * 31 + location.hashCode();
         return total;
     }
-
-    @Override
-    public void say(String phrase) {
-        System.out.println(name + " is saying: " + phrase);
-    }
-
 }

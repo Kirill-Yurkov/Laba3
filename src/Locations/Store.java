@@ -1,10 +1,7 @@
 package Locations;
 
 import Emotions.EmotionType;
-import TextObjects.Car;
-import TextObjects.CarSeat;
-import TextObjects.FoodType;
-import TextObjects.Person;
+import TextObjects.*;
 
 public class Store extends AbstractLocation {
     public Store(String name) {
@@ -21,22 +18,23 @@ public class Store extends AbstractLocation {
         person.setCurrentEmotion(EmotionType.JOY);
     }
 
-    public void buyCar(Car car, Person person) {
+    public Car buyCar(Car car) {
         if (person.getMoney() > car.getCost()) {
             System.out.println(person.getName() + " buy a new car!");
-            person.setCar(car);
             person.getCar().setCarSeat(CarSeat.BACK);
             person.getCar().setCarSeat(CarSeat.FRONT);
             person.getCar().setCarSeat(CarSeat.DRIVER);
             person.setCurrentEmotion(EmotionType.JOY);
             person.setMoney(person.getMoney() - car.getCost());
+            return car;
         } else {
             System.out.println(person.getName() + " dont have much money to buy the car.");
             person.setCurrentEmotion(EmotionType.SADNESS);
+            return null;
         }
     }
 
-    public FoodType buyFastFood(FoodType foodType, Person person) {
+    public FoodType buyFood(FoodType foodType, Person person) {
         int foodCost = foodType.getCost();
         if (discountOnFood()) {
             foodCost = (int) (foodCost * 0.9);
@@ -55,20 +53,17 @@ public class Store extends AbstractLocation {
     }
 
     private boolean discountOnFood() {
-        if (getPeople().length >= 3) {
-            return true;
-        } else {
-            return false;
-        }
+        return getPeople().length >= 3;
     }
 
-    public void buyToy(Person person){
-        int toyCost = (int) (Math.random()*2)+1;
+    public Toy buyToy(Toy toy){
+        int toyCost = toy.getCost();
         if(person.getMoney()>toyCost){
             person.setMentalHealth(person.getMentalHealth()+3);
             person.setCurrentEmotion(EmotionType.JOY);
         }else {
             person.setCurrentEmotion(EmotionType.SADNESS);
         }
+        return toy;
     }
 }

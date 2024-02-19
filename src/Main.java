@@ -37,9 +37,9 @@ public class Main {
 
         louis.setLocation(store);
         store.interactInside(louis);
-        store.buyToy(louis);
-        store.buyCar(new Car("Toyota"), louis);
-        louis.eat(store.buyFastFood(FoodType.CHIPS, louis));
+        louis.setToy(store.buyToy(new Toy("FreddyBear", 5)));
+        louis.setCar(store.buyCar(new Car("Toyota")));
+        louis.eat(store.buyFood(FoodType.CHIPS, louis));
         store.exitLocation(louis);
 
         louis.getCar().start(CarSeat.DRIVER);

@@ -6,8 +6,8 @@ import java.util.Objects;
 
 
 public abstract class AbstractEmotion implements Emotionable {
-    private String description;
-    private int mentalInfluence;
+    private final String description;
+    private final int mentalInfluence;
     public AbstractEmotion(String description, int mentalInfluence) {
         this.description = description;
         this.mentalInfluence = mentalInfluence;

@@ -5,7 +5,7 @@ import TextObjects.Person;
 import java.util.Objects;
 
 public abstract class AbstractWeather {
-    private String description;
+    private final String description;
 
     public AbstractWeather(String description) {
         this.description = description;
@@ -17,9 +17,6 @@ public abstract class AbstractWeather {
 
     public abstract void interact(Person person);
 
-    public void forecast() {
-        System.out.println("Weather forecast: " + getDescription());
-    }
 
     @Override
     public String toString() {
