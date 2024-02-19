@@ -1,9 +1,9 @@
-import Emotions.EmotionType;
-import Locations.Home;
-import Locations.MedicineCenter;
-import Locations.Store;
-import TextObjects.*;
-import Weather.WeatherType;
+import emotions.EmotionType;
+import locations.Home;
+import locations.MedicineCenter;
+import locations.Store;
+import text_objects.*;
+import weather.WeatherType;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +14,8 @@ public class Main {
         Home home = new Home("Louis' Home");
         MedicineCenter medicineCenter = new MedicineCenter("City Medical Center");
         Parrot parrot = new Parrot("Kesha");
-        WeatherType currentWeatherType;
+        WeatherType currentWeatherType = WeatherType.RAINY;
+        SoftBear freddyBear = new SoftBear("FreddyBear", 3);
 
         home.addPeople(louis,rachel,gage);
         home.startCinema();
@@ -33,13 +34,13 @@ public class Main {
         parrot.clearMemorize();
         home.exitLocation(louis);
 
-        currentWeatherType = WeatherType.RAINY;
-
         louis.setLocation(store);
         store.interactInside(louis);
-        louis.setToy(store.buyToy(new Toy("FreddyBear", 5)));
+        louis.setToy(store.buyToy(freddyBear));
+        freddyBear.play();
+        freddyBear.stop();
         louis.setCar(store.buyCar(new Car("Toyota")));
-        louis.eat(store.buyFood(FoodType.CHIPS, louis));
+        louis.eat(store.buyFood(FoodType.CHIPS));
         store.exitLocation(louis);
 
         louis.getCar().start(CarSeat.DRIVER);
